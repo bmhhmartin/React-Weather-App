@@ -1,0 +1,323 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+img {
+    border: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,ol,ul,p,address {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+body {
+    overflow-x: hidden;
+    background: url(../images/body.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+html {
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pushster&family=Righteous&display=swap');
+
+/*font-family ends*/
+:root {
+    --primary-color: #07ff31;
+    --secondary-color: #dc4a38;
+    --text-color: #464646;
+    --white-color: #ffffff;
+    --red-color: #ff1c00;
+    --blue-color: #1da1f2;
+}
+
+.searchBtn {
+    font-family: Poppins;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: black;
+    padding: 10px 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 10px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.searchBtn:hover, .searchBtn:focus,.searchBtn:active{
+    background: transparent;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: 1px solid var(--primary-color);
+}
+.navbar {
+    margin-bottom: 15px;
+    background: #282828;
+}
+.navbar-brand {
+    font-family: cursive;
+    padding: 0px;
+    color: var(--primary-color) !important;
+    margin: 0 auto;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.navbar .navbar-brand img{
+    height: 30px;
+}
+input.form-control {
+    background: transparent;
+    border: 1px solid #07ff31 !important;
+    border-radius: 5px;
+    height: 50px;
+    text-transform: capitalize;
+}
+.form-control:focus {
+    color: white;
+    background-color: transparent;
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.input-group {
+    margin: 40px 0px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 0px transparent inset !important;
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+}
+.navbar-light .navbar-nav .nav-link a {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+.navbar-light .navbar-nav .nav-link a.active {
+    color: var(--primary-color);
+}
+.title {
+    font-family: 'Righteous', serif;
+    font-size: 45px;
+    color: var(--white-color);
+    padding: 50px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-family: 'Pushster', cursive;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.details {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.weather_list{
+    padding-left: 0px;
+}
+.weather_list li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.wCard {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.wCard .city {
+    font-family: 'Poppins', cursive;
+    color: #ff6f6f;
+    font-size: 20px;
+}
+.wCard .image img{
+    min-width: 120px;
+    min-height: 120px;
+}
+.wCard .wBody .leftInfo{
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    color: #fbff00;
+    font-size: 12px;
+}
+.wCard .wBody .rightInfo {
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    color: #fbff00;
+    font-size: 12px;
+}
+.wCard .weather_list li.temp {
+    font-size: 90px;
+    color: #ff5555;
+    font-family: fantasy;
+    text-shadow: 4px 1px 3px rgba(206,206,206,0.30);
+}
+.wCard .weather_list li.sky {
+    text-transform: capitalize;
+    font-family: cursive;
+    font-size: 30px;
+    color: skyblue;
+}
+.wCard .weather_list li.feel {
+    font-size: 20px;
+}
+.wCard .weather_list li.windFlow {}
+.wCard .weather_list li.humidity {}
+
+.listMiddle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.lastPart {
+    color: #07ff31;
+}
+
+
+.blankPage{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.blankPage h1 {
+    font-size: 25px;
+    color: #ff5c5c;
+}
+.input-group>.form-control, .input-group>.form-select {
+    color: var(--white-color);
+}
+.form-control {
+    padding: .375rem 20px;
+}
+.copyright {
+    font-family: 'Poppins', cursive;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    color: var(--white-color);
+}
+.copyright a{
+    color: var(--primary-color);
+}
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: rgba(0,0,0,.1);
+    display: none;
+}
+
+
+div#basic-navbar-nav {
+    display: none !important;
+}
+
+
+
+
+/*Responsive Css starts*/
+
+@media(max-width: 767px){
+    .wCard{
+        margin-bottom: 20px;
+    }
+    .wCard .wBody .leftInfo {
+        top: 10px;
+    }
+    .wCard .wBody .rightInfo {
+        top: 10px;
+    }
+    .wCard .city {
+        margin-top: 28px;
+    }
+    .wCard .weather_list li.temp {
+        font-size: 80px;
+    }
+    .blankPage h1 {
+        font-size: 25px;
+    }
+    .searchBtn {
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+    .form-control {
+        padding: .375rem 10px;
+    }
+    .copyright{
+        position: inherit;
+        margin-top: 40px;
+    }
+   
+}
+
+@media(max-width: 480px){
+    .wCard .weather_list li.temp {
+        font-size: 70px;
+    }
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+/*Responsive Css ends*/
