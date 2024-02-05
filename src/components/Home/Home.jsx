@@ -1,8 +1,8 @@
 import axios from 'axios';
-import React, {useState, useEffect} from 'react';
-import { Container, Row, Col,InputGroup, FormControl, Button } from 'react-bootstrap';
-import { WiThermometer, WiHumidity } from "react-icons/wi";
+import React, { useState } from 'react';
+import { Button, Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap';
 import { MdLocationOn } from "react-icons/md";
+import { WiHumidity, WiThermometer } from "react-icons/wi";
 import Blank from '../Blank/Blank';
 
 const Home = () => {
@@ -67,7 +67,7 @@ const Home = () => {
                             </div>
                         ): (<Blank></Blank>)}
                         <div className='copyright'>
-                            Copyright©<a href='https://bmhhmartin.com/'>bmhhmartin</a>{year}.All Right Reserved
+                            Copyright©<a href='https://github.com/bmhhmartin'>bmhhmartin</a>{year}.All Right Reserved
                         </div>
                     </Col>
                     <Col lg={2}></Col>
